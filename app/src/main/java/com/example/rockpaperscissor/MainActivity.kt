@@ -48,8 +48,8 @@ class MainActivity : AppCompatActivity() {
 
             when{
                 btnScissor.isChecked && comMora == 2 ||
-                    btnStone. isChecked && comMora==0||
-                    btnPaper.isChecked && comMora== 1->{
+                        btnStone.isChecked && comMora==0||
+                        btnPaper.isChecked && comMora== 1->{
                     tvWinner.text="勝利者\nplayerName "
                     tvText.text ="恭喜你獲勝了！！！"
                 }

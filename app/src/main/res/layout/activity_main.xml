@@ -90,9 +90,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="161dp"
-        android:layout_marginBottom="21dp"
+        android:layout_marginBottom="8dp"
         android:shadowColor="@color/white"
         android:text="@string/btn_mora"
         android:textColorHint="@color/material_dynamic_neutral80"
@@ -103,52 +103,41 @@
         app:layout_constraintTop_toBottomOf="@+id/radioGroup"
         app:strokeColor="@color/material_dynamic_neutral80" />
 
-    <TextView
-        android:id="@+id/tv_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="43dp"
-        android:layout_marginBottom="138dp"
-        android:text="@string/tv_name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/tv_cmora"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginEnd="53dp"
-        android:layout_marginBottom="138dp"
-        android:text="@string/tv_cmora"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <LinearLayout
+        android:layout_width="342dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="35dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tv_mmora" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mora">
 
-    <TextView
-        android:id="@+id/tv_mmora"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_marginBottom="138dp"
-        android:text="@string/tv_mmora"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tv_winner" />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="91dp"
+            android:layout_height="match_parent"
+            android:text="@string/tv_name" />
 
-    <TextView
-        android:id="@+id/tv_winner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="83dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="138dp"
-        android:text="@string/tv_winner"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/tv_mmora"
-        app:layout_constraintStart_toEndOf="@+id/tv_name"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-        app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:id="@+id/tv_cmora"
+            android:layout_width="92dp"
+            android:layout_height="match_parent"
+            android:text="@string/tv_cmora" />
+
+        <TextView
+            android:id="@+id/tv_mmora"
+            android:layout_width="74dp"
+            android:layout_height="match_parent"
+            android:text="@string/tv_mmora" />
+
+        <TextView
+            android:id="@+id/tv_winner"
+            android:layout_width="92dp"
+            android:layout_height="match_parent"
+            android:text="@string/tv_winner" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
