@@ -10,4 +10,5 @@
     <string name="btn_paper">布</string>
     <string name="btn_mora">猜拳</string>
     <string name="plain_text">請輸入玩家姓名</string>
+    <string name="tv_text">請輸入姓名開始</string>
 </resources>
